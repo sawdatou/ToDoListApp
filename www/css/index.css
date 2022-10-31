@@ -1,0 +1,14 @@
+label
+{
+	text-align: center;
+}
+
+.ui-content *[data-role=header]
+{
+	border-radius: 50px;
+	background-color: yellow;
+}
+.done
+{
+	text-decoration: line-through;
+}

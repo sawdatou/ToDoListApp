@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ToDoApp</title>
+    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>ToDo List App</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <label for="task">Ajouter une tache</label>
+            <input type="text" id="task">
+            <input type="button" value="Ajouter" onclick="ajoutTache()">
+            <input type="button" value="Reinitialiser" onclick="deleteTaches()">
+            <ul id="taskList" data-role="listview" data-inset="true">
+            </ul>
+            <div> 
+                <label for="task">Tache terminée</label>
+                <ul id="taskListFinished" data-role="listview" data-inset="true">
+                </ul>
+            </div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h2>SAWDATOU SALL_MIABD Octobre 2022</h2>
+        </div>
+    </div>
+
+</body>
+</html>
